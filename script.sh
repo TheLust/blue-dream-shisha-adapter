@@ -1,5 +1,5 @@
 FILE="openapi-generator-cli.jar"
-API_DIR="../frontend/src/app/backend"
+API_DIR="../frontend/src/app/api"
 
 if [ ! -f "$FILE" ]; then
     echo "$FILE not found. Downloading..."
