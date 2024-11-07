@@ -21,7 +21,7 @@ echo "Downloading API spec from http://localhost:8080/v3/api-docs..."
 curl -o api-docs.json http://localhost:8080/v3/api-docs
 
 echo "Generating Angular REST client..."
-java -jar openapi-generator-cli.jar generate -i api-docs.json -g typescript-angular -o "$API_DIR" -c config.json --skip-validate-spec --enable-post-process-file
+java -jar openapi-generator-cli.jar generate -i api-docs.json -g typescript-angular -o "$API_DIR" -c config.json --skip-validate-spec --enable-post-process-file --api-package rest
 
 rm api-docs.json
 
