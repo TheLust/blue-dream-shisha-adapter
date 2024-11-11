@@ -9,14 +9,6 @@ else
     echo "$FILE already exists."
 fi
 
-if [ -d "$API_DIR" ]; then
-    echo "Deleting contents of the 'api' directory..."
-    rm -rf "$API_DIR"
-    echo "Contents of 'api' directory deleted."
-else
-    echo "'api' directory does not exist. No need to delete contents."
-fi
-
 echo "Downloading API spec from http://localhost:8080/v3/api-docs..."
 curl -o api-docs.json http://localhost:8080/v3/api-docs
 
